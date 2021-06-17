@@ -114,10 +114,10 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
       title: 'Frontend',
       skills: [
         { title: 'JavaScript/ES6', experience: 100 },
+        { title: 'TypeScript', experience: 100 },
         { title: 'Svelte', experience: 90 },
-        { title: 'TypeScript', experience: 80 },
+        { title: 'Tailwind', experience: 80 },
         { title: 'Bootstrap', experience: 80 },
-        { title: 'Tailwind', experience: 60 },
       ]
     },
     {
@@ -174,6 +174,7 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
       title: 'Other Interests',
       items: [
         { title: 'Piano', comment: 'Jazz player wannabe', text: '' },
+        { title: 'Literature/Linguistics', comment: 'I studied three years of the Bachelor of Arts ', text: '' },
       ]
     },
   ],
@@ -299,7 +300,7 @@ Application for the workshop given at the MediaParty 2019, entitled **Svelte: a 
         {
           title: 'Features',
           items: `
-Dinamically queries twitter's API to create word-clouds of the tweets of the specified users;
+Dynamically queries twitter's API to create word-clouds of the tweets of the specified users;
 Parameters can be passed vía url: users, interval, width, height, number of words to retrieve, etc.;
 Showcases how to integrate Svelte with 3rd parties libraries (in this case [D3's word cloud plugin](http://bl.ocks.org/joews/9697914));
 Custom backend coded in Node.js to query twitter API. Source code available in [https://gitlab.com/opensas/twitter-rest](https://gitlab.com/opensas/twitter-rest);
