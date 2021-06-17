@@ -1,7 +1,7 @@
 <script lang='ts'>
-  import type { CurriculmImageType } from './Curriculum.type'
+  import type { CurriculumImageType } from './Curriculum.type'
 
-  export let img: CurriculmImageType
+  export let img: CurriculumImageType
   const alt = img?.alt || img?.title.toLowerCase() || ''
   const title = img.title || img.alt || ''
 </script>

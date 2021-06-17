@@ -180,6 +180,48 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
   ],
   projects: [
     {
+      title: 'Revamping of transfers service company website',
+      company: '[89transfers](https://89transfers.vercel.app/)',
+      time: '2021.02',
+      text: `
+Website for booking transfer services to/from the airport.
+`,
+      images: [
+        {
+          src: 'assets/images/89transfers/89transfers-01.png',
+          href: 'https://89transfers.vercel.app',
+          title: 'Transfers homepage',
+          text: 'Landing page built with SvelteKit and TailwindCSS',
+        },
+        {
+          src: 'assets/images/89transfers/89transfers-02.png',
+          href: 'https://89transfers.vercel.app',
+          title: 'Responsive design',
+          text: 'Fully responsive design',
+        },
+        {
+          src: 'assets/images/89transfers/89transfers-03.png',
+          href: 'https://89transfers.vercel.app/blog',
+          title: 'Blogs with Sanity.io',
+          text: 'Sanity.io backed blog page',
+        },
+      ],
+      sections: [
+        {
+          title: 'Features',
+          items: `
+High performance web site built with SvelteKit and TypeScript;
+Fully responsive design with TailwindCSS;
+Blog system powered by Sanity.io;
+Live deploys with Vercel;
+Pixel perfect layout from Figma design to TailwindCSS code;
+Demo version available at [89transfers.vercel.app](https://89transfers.vercel.app/)
+`
+        },
+      ],
+      technologies: 'SvelteKit;TypeScript;TailwindCSS;Figma;Storybook;Sanity.io;Vercel'
+    },
+    {
       title: 'Commercial management system Backoffice',
       company: '[AutoCiudad](https://www.autociudad.com.ar/)',
       time: '2019.03',

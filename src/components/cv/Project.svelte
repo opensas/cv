@@ -3,7 +3,7 @@
 
   import { mark } from '../../utils/markdown'
 
-  import { slugify, toList } from "../../utils/string";
+  import { toList } from "../../utils/string";
 
   import Anchor from "../Anchor.svelte";
   

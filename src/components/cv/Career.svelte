@@ -1,7 +1,7 @@
 <script type='ts'>
-  import type { CurriculumCareer } from "./Curriculum.type";
+  import type { CurriculumCareerType } from "./Curriculum.type";
 
-  export let career: CurriculumCareer
+  export let career: CurriculumCareerType
 </script>
 
 <section class="resume-section summary-section mb-5">

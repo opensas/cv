@@ -3,7 +3,7 @@
 
   export let social: CurriculumSocialType[] | undefined = undefined
 
-  const urlToText = url => url.replace(/^http[s]?:\/\/|\/\//ig, '')
+  const urlToText = (url: string) => url.replace(/^http[s]?:\/\/|\/\//ig, '')
 </script>
 
 {#if social && social.length > 0}

@@ -88,10 +88,10 @@ export type CurriculumProjectType = {
   text?: string,
   sections?: CurriculumListItemType[],
   technologies?: string | string[],
-  images?: CurriculmImageType[],
+  images?: CurriculumImageType[],
 }
 
-export type CurriculmImageType = {
+export type CurriculumImageType = {
   src: string,
   href?: string,
   title?: string,

@@ -1,7 +1,7 @@
 <script lang='ts'>
   import marked from 'marked'
 
-  let contentEl
+  let contentEl: Element
   let html = ''
 
   $: markdown = contentEl?.textContent || ''

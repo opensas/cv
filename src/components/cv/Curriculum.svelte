@@ -15,7 +15,7 @@
   import Awards from './Awards.svelte'
   import Extras from './Extras.svelte'
   import Projects from './Projects.svelte'
-import { readRawGist } from '../../utils/gist';
+  import { readRawGist } from '../../utils/gist'
 
   export let info: CurriculumType | null = null
   export let src: string | null = null
@@ -37,7 +37,7 @@ import { readRawGist } from '../../utils/gist';
   }
   onMount(async () => {
     if (src && !info) info = await (await fetch(src)).json()      // fetch from src
-    if (gistId && !src && !info) info = (<CurriculumType> await readRawGist(gistId))  // fetch from gistId
+    if (gistId && !src && !info) info = (await readRawGist(gistId)) as CurriculumType // fetch from gistId
   })
 
 </script>
