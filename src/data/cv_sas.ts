@@ -8,7 +8,7 @@ export const info: CurriculumType = {
   profile: {
     name: 'Sebastián Scarano',
     title: 'Full Stack Developer',
-    img: 'assets/images/profile/sas5.jpg',
+    img: 'assets/images/profile/sas4.jpg',
     email: 'opensas@gmail.com',
     cell: '+54 9 11 3152 2631',
     social: [
