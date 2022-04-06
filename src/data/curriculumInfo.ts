@@ -22,7 +22,7 @@ export const info: CurriculumType = {
   career: {
     title: 'career summary',
     summary: `
-Full Stack Developer with 15+ years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
+Full Stack Developer with more than 15 years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
     `
   },
   positions: [ 
