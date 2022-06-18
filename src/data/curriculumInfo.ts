@@ -13,8 +13,8 @@ export const info: CurriculumType = {
     cell: '+54 9 11 3152 2631',
     social: [
       { icon: 'fa-twitter', url: '//twitter.com/opensas' },
-      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com'},
-      { icon: 'fa-github-alt', url: '//github.com/opensas'},
+      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com' },
+      { icon: 'fa-github-alt', url: '//github.com/opensas' },
       { icon: 'fa-gitlab', url: '//gitlab.com/opensas' },
       { icon: 'fa-linkedin-in', url: '//linkedin.com/in/opensas' },
     ]
@@ -22,10 +22,10 @@ export const info: CurriculumType = {
   career: {
     title: 'career summary',
     summary: `
-Full Stack Developer with more than 15 years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
+            Full Stack Developer with 15+ years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
     `
   },
-  positions: [ 
+  positions: [
     {
       title: 'Software Architect',
       company: 'National Ministry of Labour of Argentina ',
@@ -42,9 +42,9 @@ Full Stack Developer with more than 15 years of hands-on experience designing, d
             Planning of training tasks;
             Evaluate and recommend tools and technologies to achieve results;
             `
-          }
-        
-        ],
+        }
+
+      ],
       technologies: 'Node.js;.NET Core;TypeScript;Svelte;SQL Server;Bootstrap;'
     },
     {
@@ -64,7 +64,7 @@ Full Stack Developer with more than 15 years of hands-on experience designing, d
             Setting deadlines and ensuring that projects remain on schedule;
           `
         }
-        
+
       ],
       technologies: '.NET Framework;ASP;JavaScript;Backbone;SQL Server;Bootstrap'
     },
@@ -103,11 +103,11 @@ Full Stack Developer with more than 15 years of hands-on experience designing, d
             Training users;
           `
         }
-        
+
       ],
       technologies: 'Visual Basic 4.0;PHP;Clipper;FoxPro;DBase;'
     },
-    
+
   ],
   skillAreas: [
     {
@@ -145,19 +145,21 @@ Full Stack Developer with more than 15 years of hands-on experience designing, d
       degree: 'Information System Engineer',
       organization: 'National Technological University - UTN Argentina',
       time: '1994 - 2000',
-    }, 
+    },
     {
       degree: 'Functional Programming Principles in Scala',
       organization: 'Dictated by Martin Odersky via Coursera',
       time: 'nov 2011',
-    }, 
+    },
   ],
   awards: [
-    { title: 'First price at the national hackaton of public data', time: 'aug 2015', 
-      description: `Visualization of tourist destinations and hotel occupancy [link](https://nardoz.com/HotelViz)` 
+    {
+      title: 'First price at the national hackaton of public data', time: 'aug 2015',
+      description: `Visualization of tourist destinations and hotel occupancy [link](https://nardoz.com/HotelViz)`
     },
-    { title: 'Second price at Buenos Aires mobile apps development hackaton', time: 'jun 2012', 
-      description: `Social collaborative platform for citizen discussion developed in Play! 2.0, with Scala, Akka and MySql.` 
+    {
+      title: 'Second price at Buenos Aires mobile apps development hackaton', time: 'jun 2012',
+      description: `Social collaborative platform for citizen discussion developed in Play! 2.0, with Scala, Akka and MySql.`
     },
   ],
   extras: [

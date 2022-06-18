@@ -2,6 +2,7 @@
   import { slide } from 'svelte/transition'
 
   import type { CurriculumProjectType } from "./Curriculum.type";
+  import Tougle from "./Tougle.svelte"
 
   import Anchor from '../Anchor.svelte'
 
@@ -16,7 +17,8 @@
 <section class="resume-section experience-section mb-5">
   <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
     <Anchor title="Freelance projects"/>
-    <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i>
+    <Tougle {visible}/>
+    <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
   </h2>
   {#if visible}
   <div class="resume-section-content" transition:slide>
