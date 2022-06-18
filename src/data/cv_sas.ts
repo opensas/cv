@@ -8,13 +8,13 @@ export const info: CurriculumType = {
   profile: {
     name: 'Sebastián Scarano',
     title: 'Full Stack Developer',
-    img: 'assets/images/profile/sas4.jpg',
+    img: 'assets/images/profile/sas5.jpg',
     email: 'opensas@gmail.com',
     cell: '+54 9 11 3152 2631',
     social: [
       { icon: 'fa-twitter', url: '//twitter.com/opensas' },
-      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com'},
-      { icon: 'fa-github-alt', url: '//github.com/opensas'},
+      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com' },
+      { icon: 'fa-github-alt', url: '//github.com/opensas' },
       { icon: 'fa-gitlab', url: '//gitlab.com/opensas' },
       { icon: 'fa-linkedin-in', url: '//linkedin.com/in/opensas' },
     ]
@@ -25,11 +25,36 @@ export const info: CurriculumType = {
 Full Stack Developer with 15+ years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
     `
   },
-  positions: [ 
+  positions: [
+    {
+      title: 'Frontend engineer',
+      company: 'Wingback SaaS',
+      time: '2022 - Present',
+      text: `
+        Work as a frontend engineer developing web UIs for a disruptive startup providing SaaS pricing & packaging.
+      `,
+      sections: [
+        {
+          title: 'Responsibilities',
+          items: `
+            Optimize application for maximum speed and scalability;
+            Analysis and definition of the architecture of applications to be developed;
+            Build reusable code and libraries for future use;
+            Create technical documentation for developers integrating provided tools with their own sites;
+            Develop and document a library for easily integrate wingback with Stripe API;
+            Develop features and improvements in a secure, well-tested, and performant way;
+            Ship small features and improvements with minimal guidance and support from other team members;
+            Work with Product Management and other stakeholders (Backend, UX, etc.) to iterate on new features;
+            `
+        }
+
+      ],
+      technologies: 'JavaScript;TypeScript;SvelteKit;PostgreSQL;Rust;Stripe;github;AWS;Jira;Figma'
+    },
     {
       title: 'Software Architect',
       company: 'National Ministry of Labour of Argentina ',
-      time: '2012 - Present',
+      time: '2012 - 2021',
       text: `
         Designed, developed and implemented software solutions to address complex business issues, providing technical leadership within the IT department.
       `,
@@ -42,9 +67,8 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
             Planning of training tasks;
             Evaluate and recommend tools and technologies to achieve results;
             `
-          }
-        
-        ],
+        }
+      ],
       technologies: 'Node.js;.NET Core;TypeScript;Svelte;SQL Server;Bootstrap;'
     },
     {
@@ -64,7 +88,6 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
             Setting deadlines and ensuring that projects remain on schedule;
           `
         }
-        
       ],
       technologies: '.NET Framework;ASP;JavaScript;Backbone;SQL Server;Bootstrap'
     },
@@ -103,11 +126,9 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
             Training users;
           `
         }
-        
       ],
       technologies: 'Visual Basic 4.0;PHP;Clipper;FoxPro;DBase;'
     },
-    
   ],
   skillAreas: [
     {
@@ -128,14 +149,15 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
         { title: 'PHP', experience: 80 },
         { title: 'C#/.NET Core', experience: 80 },
         { title: 'Java', experience: 70 },
+        { title: 'Rust', experience: 40 },
       ]
     },
     {
       title: 'Databases',
       skills: [
         { title: 'SQL Server', experience: 100 },
+        { title: 'PostgreSQL', experience: 80 },
         { title: 'MySql', experience: 70 },
-        { title: 'PostgreSQL', experience: 70 },
       ]
     },
   ],
@@ -145,19 +167,21 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
       degree: 'Information System Engineer',
       organization: 'National Technological University - UTN Argentina',
       time: '1994 - 2000',
-    }, 
+    },
     {
       degree: 'Functional Programming Principles in Scala',
       organization: 'Dictated by Martin Odersky via Coursera',
       time: 'nov 2011',
-    }, 
+    },
   ],
   awards: [
-    { title: 'First price at the national hackaton of public data', time: 'aug 2015', 
-      description: `Visualization of tourist destinations and hotel occupancy [link](https://nardoz.com/HotelViz)` 
+    {
+      title: 'First price at the national hackaton of public data', time: 'aug 2015',
+      description: `Visualization of tourist destinations and hotel occupancy [link](https://nardoz.com/HotelViz)`
     },
-    { title: 'Second price at Buenos Aires mobile apps development hackaton', time: 'jun 2012', 
-      description: `Social collaborative platform for citizen discussion developed in Play! 2.0, with Scala, Akka and MySql.` 
+    {
+      title: 'Second price at Buenos Aires mobile apps development hackaton', time: 'jun 2012',
+      description: `Social collaborative platform for citizen discussion developed in Play! 2.0, with Scala, Akka and MySql.`
     },
   ],
   extras: [
@@ -179,6 +203,49 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
     },
   ],
   projects: [
+    {
+      title: 'Frontend development for a SaaS Pricing & Packaging company',
+      company: '[Wingback](https://www.wingback.com/)',
+      time: '2022.02',
+      text: `
+        SveltKit frontend for customer and end user portal.
+      `,
+      images: [
+        {
+          src: 'assets/images/wingback/pricing-plans.png',
+          title: 'Pricing plans page',
+          text: 'Pricing plans page',
+        },
+        {
+          src: 'assets/images/wingback/end-user-billing-portal.png',
+          title: 'End user billing portal',
+          text: 'Front end application to let the user manage their own plans',
+        },
+        {
+          src: 'assets/images/wingback/pricing-page-preview.png',
+          title: 'Pricing page preview',
+          text: 'Pricing page preview',
+        },
+        {
+          src: 'assets/images/wingback/stripe-payment-library.png',
+          title: 'JavaScript library to easily integrate Stripe accounts with Wingback',
+          text: 'JavaScript library to easily integrate Stripe accounts with Wingback',
+        },
+      ],
+      sections: [
+        {
+          title: 'Features',
+          items: `
+High performance web site built with SvelteKit and TypeScript;
+Fully responsive design with TailwindCSS;
+Rust powered backend;
+Live deploys with Vercel & AWS;
+JavaScript library to easily integrate with Stripe;
+`
+        },
+      ],
+      technologies: 'SvelteKit;TypeScript;TailwindCSS;Figma;Storybook;Sanity.io;Vercel'
+    },
     {
       title: 'Revamping of transfers service company website',
       company: '[89transfers](https://89transfers.vercel.app/)',
