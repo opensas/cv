@@ -6,7 +6,7 @@
   import Anchor from '../Anchor.svelte'
 
   import type { CurriculumOtherSkillsType, CurriculumSkillAreaType } from "./Curriculum.type";
-  import Tougle from "./Tougle.svelte"
+  import Toggle from "./Toggle.svelte"
 
   export let skillAreas: CurriculumSkillAreaType[]
   export let otherSkills: CurriculumOtherSkillsType
@@ -17,7 +17,7 @@
 <section class="resume-section skills-section mb-5">
   <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
     <Anchor title="Skills &amp; Tools" />
-    <Tougle {visible}/>
+    <Toggle {visible}/>
     <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
   </h2>
 

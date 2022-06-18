@@ -2,7 +2,7 @@
   import { slide } from 'svelte/transition'
 
   import type { CurriculumExtraType } from "./Curriculum.type";
-  import Tougle from "./Tougle.svelte"
+  import Toggle from "./Toggle.svelte"
 
   export let extras: CurriculumExtraType[]
 
@@ -15,7 +15,7 @@
 <section class="resume-section language-section mb-5">
   {#each extras as extra (extra.title)}
     <h2 on:click={() => visibles[extra.title] = !visibles[extra.title]} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{ extra.title }
-      <Tougle visible={visibles[extra.title]}/>
+      <Toggle visible={visibles[extra.title]}/>
       <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
     </h2>
     {#if visibles[extra.title]}

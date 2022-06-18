@@ -5,7 +5,7 @@
 
   import { toList } from "../../utils/string";
 
-  import Tougle from "./Tougle.svelte"
+  import Toggle from "./Toggle.svelte"
   import Anchor from "../Anchor.svelte";
   
   import type { CurriculumProjectType } from "./Curriculum.type"
@@ -25,7 +25,7 @@
     <div on:click={() => visible = !visible} class="d-flex flex-column flex-md-row">
       <h3 class="resume-position-title font-weight-bold mb-1">
         <Anchor title={project.title}/>
-        <Tougle {visible}/>
+        <Toggle {visible}/>
       </h3>
       {#if project.company}<div class="resume-company-name ml-auto">{@html mark(project.company) }</div>{/if}
     </div><!--//row-->

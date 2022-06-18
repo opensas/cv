@@ -2,7 +2,7 @@
   import { slide } from 'svelte/transition'
 
   import type { CurriculumPositionType } from "./Curriculum.type";
-  import Tougle from "./Tougle.svelte"
+  import Toggle from "./Toggle.svelte"
 
   import Position from './Position.svelte'
 
@@ -14,7 +14,7 @@
 {#if positions && positions.length > 0}
 <section class="resume-section experience-section mb-5">
   <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience
-    <Tougle {visible}/>
+    <Toggle {visible}/>
     <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
   </h2>
   {#if visible}
