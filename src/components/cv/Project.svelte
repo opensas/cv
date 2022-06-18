@@ -5,9 +5,10 @@
 
   import { toList } from "../../utils/string";
 
+  import Tougle from "./Tougle.svelte"
   import Anchor from "../Anchor.svelte";
   
-  import type { CurriculumProjectType } from "./Curriculum.type";
+  import type { CurriculumProjectType } from "./Curriculum.type"
   import CurriculumImage from './CurriculumImage.svelte';
 
   export let project: CurriculumProjectType
@@ -24,7 +25,7 @@
     <div on:click={() => visible = !visible} class="d-flex flex-column flex-md-row">
       <h3 class="resume-position-title font-weight-bold mb-1">
         <Anchor title={project.title}/>
-        <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i>
+        <Tougle {visible}/>
       </h3>
       {#if project.company}<div class="resume-company-name ml-auto">{@html mark(project.company) }</div>{/if}
     </div><!--//row-->
@@ -32,7 +33,7 @@
   </div><!--//resume-timeline-item-header-->
   {#if visible}
   <div class="resume-timeline-item-desc" transition:slide>
-    {#if project.text }<p>{@html mark(project.text) }</p>{/if}
+    {#if project.text.trim() }<p>{@html mark(project.text.trim()) }</p>{/if}
     {#each project.images as img}
       <CurriculumImage {img} />
       <hr />
@@ -42,7 +43,7 @@
       {#if section.text }<p>{@html mark(section.text) }</p>{/if}
       <ul>
         {#each toList(section.items) as item}
-        <li>{@html mark(item) }</li>
+        <li>{@html mark(item.trim()) }</li>
         {/each}
       </ul>
     {/each}

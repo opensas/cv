@@ -4,6 +4,7 @@
   import { toList } from "../../utils/string";
 
   import type { CurriculumPositionType } from "./Curriculum.type";
+  import Tougle from "./Tougle.svelte"
 
   export let position: CurriculumPositionType
   const technologies = toList(position.technologies)
@@ -16,7 +17,8 @@
   <div class="resume-timeline-item-header mb-2">
     <div on:click={() => visible = !visible} class="d-flex flex-column flex-md-row">
       <h3 class="resume-position-title font-weight-bold mb-1">{ position.title }
-        <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i>
+        <Tougle {visible}/>
+        <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
       </h3>
       <div class="resume-company-name ml-auto">{ position.company }</div>
     </div><!--//row-->
