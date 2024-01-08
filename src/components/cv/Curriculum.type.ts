@@ -16,6 +16,7 @@ export type CurriculumProfileType = {
   img: string,
   email: string,
   cell: string,
+  pdf?: string,
   social: CurriculumSocialType[],
 }
 

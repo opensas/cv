@@ -1,11 +1,9 @@
 <script lang='ts'>
-  import type { CurriculumProfileType, CurriculumSocialType } from "./Curriculum.type"
+  import type { CurriculumProfileType } from "./Curriculum.type"
 
   import SocialList from './SocialList.svelte'
 
   export let profile: CurriculumProfileType
-
-  const { social } : { social: CurriculumSocialType[] } = profile
 </script>
 
 <header class="resume-header pt-4 pt-md-0">
@@ -18,11 +16,16 @@
         <ul class="list-unstyled">
           <li class="mb-2"><a href="mailto:{ profile.email }"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>{ profile.email }</a></li>
           <!-- svelte-ignore a11y-invalid-attribute -->
-          <li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>{ profile.cell }</a></li>
+          <li class="mb-2">
+            <a href={`//web.whatsapp.com/send?phone=${profile.cell}&text=let's work together!`}><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>{ profile.cell }</a>
+          </li>
+          {#if profile.pdf}
+            <li class="mb-2"><a href={profile.pdf} target="_blank"><i class="far fa-file-pdf fa-fw mr-2" data-fa-transform="grow-3"></i>download pdf resume</a></li>
+          {/if}
         </ul>
       </div><!--//primary-info-->
 
-      <SocialList {social} />
+      <SocialList social={profile.social} />
 
     </div><!--//media-body-->
   </div><!--//media-->

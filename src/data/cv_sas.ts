@@ -11,12 +11,14 @@ export const info: CurriculumType = {
     img: 'assets/images/profile/sas5.jpg',
     email: 'opensas@gmail.com',
     cell: '+54 9 11 3152 2631',
+    pdf: 'assets/cv/cv_sebastian-scarano.pdf',
     social: [
       { icon: 'fa-twitter', url: '//twitter.com/opensas' },
       { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com' },
       { icon: 'fa-github-alt', url: '//github.com/opensas' },
       { icon: 'fa-gitlab', url: '//gitlab.com/opensas' },
       { icon: 'fa-linkedin-in', url: '//linkedin.com/in/opensas' },
+      { icon: 'fa-whatsapp', url: `//web.whatsapp.com/send?phone=+5491131522631&text=let's work together!`, text: '+54 9 11 3152 2631' },
     ]
   },
   career: {
