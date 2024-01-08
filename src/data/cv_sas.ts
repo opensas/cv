@@ -11,7 +11,7 @@ export const info: CurriculumType = {
     img: 'assets/images/profile/sas5.jpg',
     email: 'opensas@gmail.com',
     cell: '+54 9 11 3152 2631',
-    pdf: 'assets/cv/cv_sebastian-scarano.pdf',
+    pdf: 'cv/cv_sebastian_scarano.pdf',
     social: [
       { icon: 'fa-twitter', url: '//twitter.com/opensas' },
       { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '60K+ at stackoverflow.com' },
