@@ -12,22 +12,24 @@
 </script>
 
 {#if positions && positions.length > 0}
-<section class="resume-section experience-section mb-5">
-  <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience
-    <Toggle {visible}/>
-    <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
-  </h2>
-  {#if visible}
-  <div class="resume-section-content" transition:slide>
-    <div class="resume-timeline position-relative">
+  <section class="resume-section experience-section mb-5">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience
+      <Toggle {visible}/>
+      <!-- <i class="resume-award-icon fas fa-toggle-on" data-fa-transform="shrink-2"></i> -->
+    </h2>
 
-      {#each positions as position}
-        <Position {position} />
-      {/each}
+    {#if visible}
+      <div class="resume-section-content" transition:slide>
+        <div class="resume-timeline position-relative">
 
-    </div><!--//resume-timeline-->
-    
-  </div>
-  {/if}
-</section><!--//experience-section-->
+          {#each positions as position}
+            <Position {position} />
+          {/each}
+
+        </div><!--//resume-timeline-->
+
+      </div>
+    {/if}
+  </section><!--//experience-section-->
 {/if}

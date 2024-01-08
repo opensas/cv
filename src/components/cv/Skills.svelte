@@ -15,6 +15,7 @@
 </script>
 
 <section class="resume-section skills-section mb-5">
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
   <h2 on:click={() => visible = !visible} class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
     <Anchor title="Skills &amp; Tools" />
     <Toggle {visible}/>
@@ -40,15 +41,16 @@
       </div><!--//resume-skill-item-->
 
       {#if otherSkills && otherSkills.length > 0}
-      <div class="resume-skill-item">
-        <h4 class="resume-skills-cat font-weight-bold">Others</h4>
-        <ul class="list-inline">
-          {#each toList(otherSkills) as skill }
-            <li class="list-inline-item"><span class="badge badge-light">{ skill }</span></li>
-          {/each}
-        </ul>
-      </div><!--//resume-skill-item-->
+        <div class="resume-skill-item">
+          <h4 class="resume-skills-cat font-weight-bold">Others</h4>
+          <ul class="list-inline">
+            {#each toList(otherSkills) as skill }
+              <li class="list-inline-item"><span class="badge badge-light">{ skill }</span></li>
+            {/each}
+          </ul>
+        </div><!--//resume-skill-item-->
       {/if}
+
     </div><!--resume-section-content-->
   {/if}
 </section><!--//skills-section-->
