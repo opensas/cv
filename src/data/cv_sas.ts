@@ -22,7 +22,7 @@ export const info: CurriculumType = {
   career: {
     title: 'career summary',
     summary: `
-Full Stack Developer with 15+ years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
+Full Stack Developer with 20+ years of hands-on experience designing, developing, and implementing applications and solutions using a wide range of technologies and programming languages.
     `
   },
   positions: [
@@ -145,11 +145,11 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
       title: 'Backend',
       skills: [
         { title: 'Node.js', experience: 100 },
-        { title: 'Express/NestJS/FoalTS', experience: 90 },
+        { title: 'Express/NestJS', experience: 90 },
+        { title: 'Rust', experience: 40 },
         { title: 'PHP', experience: 80 },
         { title: 'C#/.NET Core', experience: 80 },
         { title: 'Java', experience: 70 },
-        { title: 'Rust', experience: 40 },
       ]
     },
     {
@@ -208,7 +208,7 @@ Full Stack Developer with 15+ years of hands-on experience designing, developing
       company: '[Wingback](https://www.wingback.com/)',
       time: '2022.02',
       text: `
-        SveltKit frontend for customer and end user portal.
+        SvelteKit frontend for customer and end user portal.
       `,
       images: [
         {
@@ -289,11 +289,11 @@ Demo version available at [89transfers.vercel.app](https://89transfers.vercel.ap
       technologies: 'SvelteKit;TypeScript;TailwindCSS;Figma;Storybook;Sanity.io;Vercel'
     },
     {
-      title: 'Commercial management system Backoffice',
+      title: 'Commercial management system Back-office',
       company: '[AutoCiudad](https://www.autociudad.com.ar/)',
       time: '2019.03',
       text: `
-Commercial management backoffice for online auto-parts sale.
+Commercial management back-office for online auto-parts sale.
 `,
       images: [
         {
@@ -325,7 +325,7 @@ Automatic invoice generation using [AFIP API](https://www.afip.gob.ar/ws/) (Fede
     },
     {
       title: 'Svelte tutorials series for Mozilla Developer Network',
-      company: '[Mozilla](//www.mozilla.org/)',
+      company: '[Mozilla](//developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)',
       time: '2019.03..2019.07',
       text: `
 A series of eight tutorials developed specifically for Mozilla, covering most aspects of Svelte framework. The material starts with a basic introduction to Svelte and ends up developing a complete web application and covering advanced subjects, such as TypeScript support and deployment options. The work has been supervised by Chris Mills ([@chrisdavidmills](https://twitter.com/chrisdavidmills)), who has been in charge of MDN for the last ten years.
@@ -525,7 +525,7 @@ It uses several client-side technologies like [LeafLet](https://leafletjs.com/),
       time: '2015.08',
       text: `
 This visualization won the first prize at the national hackaton organized by the **Public data portal of Argentina**. It is based on public data, processed, cleansed and enriched using [OpenRefine](https://openrefine.org/). The visualization was built using several client-side JavaScript libraries like [knockout.js](https://knockoutjs.com/), [underscore.js](https://underscorejs.org/), [TopoJSON](https://github.com/topojson/topojson), [D3](https://d3js.org/) and [NVD3](https://nvd3.org/).
-The visualization shows different items like hotels, travellers, available and occupied rooms and their distribution throughout the Argentinean map. It can also animate the graphic to show how it varies according to the season of the year.
+The visualization shows different items like hotels, travelers, available and occupied rooms and their distribution throughout the Argentinean map. It can also animate the graphic to show how it varies according to the season of the year.
 The visualization is available online [here](https://nardoz.com/HotelViz/)
 `,
       images: [
