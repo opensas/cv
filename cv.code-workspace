@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"AFIP",
+			"Akka",
+			"autociudad",
+			"backbonebootstrap",
+			"Backoffice",
+			"chrisdavidmills",
+			"conurbano",
+			"Coursera",
+			"Figma",
+			"gitlab",
+			"hackaton",
+			"heroku",
+			"hotelviz",
+			"linkedin",
+			"Mapbox",
+			"mediaparty",
+			"mozilla",
+			"Odersky",
+			"OIDC",
+			"opensas",
+			"rdwavemedia",
+			"Scarano",
+			"stackoverflow",
+			"vercel",
+			"Xiaoying"
+		]
+	}
+}
