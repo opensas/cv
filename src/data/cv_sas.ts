@@ -14,7 +14,7 @@ export const info: CurriculumType = {
     pdf: 'assets/cv/cv_sebastian-scarano.pdf',
     social: [
       { icon: 'fa-twitter', url: '//twitter.com/opensas' },
-      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '50K+ at stackoverflow.com' },
+      { icon: 'fa-stack-overflow', url: '//stackoverflow.com/users/47633/opensas', text: '60K+ at stackoverflow.com' },
       { icon: 'fa-github-alt', url: '//github.com/opensas' },
       { icon: 'fa-gitlab', url: '//gitlab.com/opensas' },
       { icon: 'fa-linkedin-in', url: '//linkedin.com/in/opensas' },
@@ -29,11 +29,11 @@ Full Stack Developer with 20+ years of hands-on experience designing, developing
   },
   positions: [
     {
-      title: 'Frontend engineer',
+      title: 'Frontend team leader and backend developer',
       company: 'Wingback SaaS',
       time: '2022 - Present',
       text: `
-        Work as a frontend engineer developing web UIs for a disruptive startup providing SaaS pricing & packaging.
+        Worked leading the front-end development of web UIs and collaborated on the backend for a disruptive startup providing SaaS pricing & packaging.
       `,
       sections: [
         {
@@ -163,7 +163,7 @@ Full Stack Developer with 20+ years of hands-on experience designing, developing
       ]
     },
   ],
-  otherSkills: 'git;github/gitlab;VSCode;Postman/curl;jQuery;Twitter Bootstrap;Backbone;Scala;Crystal;Python;MongoDB;ELK stack;REST/SOAP;API design;Swagger/OpenAPI',
+  otherSkills: 'git;github/gitlab;VSCode;Postman/curl;Scala;Crystal;Python;MongoDB;REST/SOAP;API design;Swagger/OpenAPI',
   education: [
     {
       degree: 'Information System Engineer',
@@ -206,11 +206,11 @@ Full Stack Developer with 20+ years of hands-on experience designing, developing
   ],
   projects: [
     {
-      title: 'Frontend development for a SaaS Pricing & Packaging company',
+      title: 'Frontend and backend development for a SaaS pricing company',
       company: '[Wingback](https://www.wingback.com/)',
       time: '2022.02',
       text: `
-        SvelteKit frontend for customer and end user portal.
+        Leader of the SvelteKit frontend for customer and end user portal and Rust backend developer.
       `,
       images: [
         {
@@ -246,7 +246,7 @@ JavaScript library to easily integrate with Stripe;
 `
         },
       ],
-      technologies: 'SvelteKit;TypeScript;TailwindCSS;Figma;Storybook;Sanity.io;Vercel'
+      technologies: 'SvelteKit;TypeScript;TailwindCSS;Figma;Rust;Stripe;Vercel'
     },
     {
       title: 'Revamping of transfers service company website',
